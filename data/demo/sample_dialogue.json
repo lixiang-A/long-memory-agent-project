@@ -1,0 +1,85 @@
+{
+  "sample_id": "demo-001",
+  "title": "Graduate-school planning conversation",
+  "session_summaries": [
+    "Session 1: The user wants to apply for a research-oriented MPhil in Hong Kong or Singapore and is interested in AI agents.",
+    "Session 2: The user prefers a paper-style course project with a clear research question and manageable engineering scope.",
+    "Session 3: The user becomes interested in long-context memory and wants a project that can later grow into an agent-memory system."
+  ],
+  "turns": [
+    {
+      "turn_id": 1,
+      "session_id": 1,
+      "speaker": "user",
+      "text": "I want to apply for a research-oriented MPhil in Hong Kong or Singapore."
+    },
+    {
+      "turn_id": 2,
+      "session_id": 1,
+      "speaker": "assistant",
+      "text": "Then your course project should look closer to a small research prototype than a generic demo."
+    },
+    {
+      "turn_id": 3,
+      "session_id": 1,
+      "speaker": "user",
+      "text": "I am especially interested in AI agents."
+    },
+    {
+      "turn_id": 4,
+      "session_id": 2,
+      "speaker": "user",
+      "text": "The project must be realistic because I only have about two weeks."
+    },
+    {
+      "turn_id": 5,
+      "session_id": 2,
+      "speaker": "assistant",
+      "text": "Then we should narrow the scope to one core module instead of building a full agent system."
+    },
+    {
+      "turn_id": 6,
+      "session_id": 2,
+      "speaker": "user",
+      "text": "I want something that matches both industry trends and future research."
+    },
+    {
+      "turn_id": 7,
+      "session_id": 3,
+      "speaker": "assistant",
+      "text": "A long-context memory module is a good match because agents need to preserve user goals and conversation state."
+    },
+    {
+      "turn_id": 8,
+      "session_id": 3,
+      "speaker": "user",
+      "text": "I agree. Let's do a project on long-text memory."
+    },
+    {
+      "turn_id": 9,
+      "session_id": 3,
+      "speaker": "assistant",
+      "text": "We can combine recent context, session summaries, and retrieval to build a hybrid memory system."
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "q1",
+      "question": "What long-term degree goal does the user mention?",
+      "answer": "A research-oriented MPhil in Hong Kong or Singapore.",
+      "support_turn_ids": [1]
+    },
+    {
+      "question_id": "q2",
+      "question": "What project topic does the user finally agree on?",
+      "answer": "A project on long-text memory.",
+      "support_turn_ids": [8]
+    },
+    {
+      "question_id": "q3",
+      "question": "Why is a long-context memory module considered a good match for agents?",
+      "answer": "Because agents need to preserve user goals and conversation state.",
+      "support_turn_ids": [7]
+    }
+  ]
+}

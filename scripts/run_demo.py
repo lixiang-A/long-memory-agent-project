@@ -1,5 +1,4 @@
 import argparse
-from pathlib import Path
 
 from long_memory_agent.loader import load_dialogue_sample
 from long_memory_agent.memory import build_hybrid_memory, build_recent_memory, build_summary_memory
@@ -10,7 +9,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Run the long-memory project demo.")
     parser.add_argument(
         "--data",
-        default="long_memory_agent_project/data/demo/sample_dialogue.json",
+        default="data/demo/sample_dialogue.json",
         help="Path to a dialogue sample JSON file.",
     )
     parser.add_argument(

@@ -1,90 +1,108 @@
 # Long Memory Agent Project
 
-This is the course-version project scaffold for a long-context memory system built around three memory sources:
+A lightweight research-style project on long-context memory for Transformer-based dialogue systems and AI agents.
 
-- recent window
-- session summary
+## Overview
+
+This project studies a practical question behind many LLM and agent systems:
+
+**When the context window is limited, how can a model preserve long-term dialogue information more effectively?**
+
+Instead of building a full agent stack, this repository focuses on one high-value module:
+
+- recent context memory
+- session summary memory
 - retrieval memory
+- time-aware reranking
 
-The goal is to support a paper-friendly experiment loop:
+That makes it suitable both as a course-paper prototype and as a portfolio project that can later grow into an agent memory system.
 
-1. load multi-session dialogue data
-2. build memory context with different strategies
-3. assemble prompts for QA
-4. compare baselines and the hybrid memory design
+## Why This Project Matters
 
-## Current scope
+Long-running AI agents need more than strong single-turn generation. They also need to:
 
-Implemented in this scaffold:
+- preserve user goals across many turns
+- recover important facts from old dialogue history
+- balance global summaries with fine-grained evidence
+- stay robust under limited context budgets
+
+This repository is a small but focused implementation of that idea.
+
+## Current Method
+
+The current prototype compares three memory strategies:
+
+1. `recent`
+   Keeps only the latest dialogue turns.
+2. `summary`
+   Keeps recent turns plus session-level summaries.
+3. `hybrid`
+   Combines recent turns, session summaries, and retrieved history chunks with a simple time-aware reranking step.
+
+## Implemented Components
 
 - generic dialogue loader
-- lexical retriever
-- simple time-aware reranking
-- recent / summary / hybrid memory builders
-- prompt assembly
-- demo script
+- chunk-based lexical retrieval
+- lightweight time-aware reranking
+- memory bundle construction
+- QA prompt assembly
 - exact match and token F1 helpers
+- runnable command-line demo
 
-Not implemented yet:
-
-- remote LLM API call
-- large-scale batch experiment runner
-- dataset-specific adapters for every benchmark
-- plotting
-
-## Project layout
+## Repository Layout
 
 ```text
-long_memory_agent_project/
-  data/demo/sample_dialogue.json
-  scripts/run_demo.py
-  src/long_memory_agent/
-    loader.py
-    memory.py
-    metrics.py
-    models.py
-    prompting.py
-    retrieval.py
+data/demo/sample_dialogue.json
+scripts/run_demo.py
+src/long_memory_agent/
+  loader.py
+  memory.py
+  metrics.py
+  models.py
+  prompting.py
+  retrieval.py
 ```
 
-## Quick start
+## Quick Start
 
-From the workspace root:
+From the repository root:
 
 ```bash
-PYTHONPATH=long_memory_agent_project/src python3 long_memory_agent_project/scripts/run_demo.py --strategy hybrid --question-id q1
+PYTHONPATH=src python3 scripts/run_demo.py --strategy hybrid --question-id q1
 ```
 
-Try other strategies:
+Try the other memory settings:
 
 ```bash
-PYTHONPATH=long_memory_agent_project/src python3 long_memory_agent_project/scripts/run_demo.py --strategy recent
-PYTHONPATH=long_memory_agent_project/src python3 long_memory_agent_project/scripts/run_demo.py --strategy summary
+PYTHONPATH=src python3 scripts/run_demo.py --strategy recent --question-id q2
+PYTHONPATH=src python3 scripts/run_demo.py --strategy summary --question-id q3
 ```
 
-## Next steps
+## Example Output
 
-- replace the demo file with a benchmark sample
-- add a provider wrapper for model inference
-- write experiment outputs to JSONL
-- add ablations
+The demo prints:
 
-## GitHub publishing
+- the selected question
+- the chosen memory strategy
+- the assembled memory context
+- the final QA prompt
 
-This folder is designed to work as an independent repository.
+This makes it easy to inspect how different memory strategies expose evidence to the model.
 
-Suggested local workflow:
+## Next Milestones
 
-```bash
-cd /Users/liz/Desktop/统计软件计算课程资料/long_memory_agent_project
-git init -b main
-git add .
-git commit -m "Initial project scaffold"
-```
+- adapt the loader to a real long-memory benchmark
+- add batch evaluation across QA examples
+- save experiment outputs to JSONL or CSV
+- plug in a model provider for end-to-end answering
+- add ablation experiments for summary, retrieval, and reranking
 
-Then create an empty GitHub repository and connect it:
+## Project Status
 
-```bash
-git remote add origin git@github.com:<your-username>/long-memory-agent-project.git
-git push -u origin main
-```
+This repository is currently in the **course-project MVP** stage:
+
+- the core structure is ready
+- the demo pipeline runs
+- the next step is to connect benchmark data and formal experiments
+
+Later, this can be extended into a stronger agent-memory and RAG portfolio project.

@@ -111,3 +111,4 @@ Later, this can be extended into a stronger agent-memory and RAG portfolio proje
 
 - Course submission plan: [docs/course_submission_plan.md](docs/course_submission_plan.md)
 - Internship-oriented extension plan: [docs/internship_agent_extension.md](docs/internship_agent_extension.md)
+- New chat handoff: [docs/new_chat_handoff.md](docs/new_chat_handoff.md)

@@ -106,3 +106,8 @@ This repository is currently in the **course-project MVP** stage:
 - the next step is to connect benchmark data and formal experiments
 
 Later, this can be extended into a stronger agent-memory and RAG portfolio project.
+
+## Planning Documents
+
+- Course submission plan: [docs/course_submission_plan.md](docs/course_submission_plan.md)
+- Internship-oriented extension plan: [docs/internship_agent_extension.md](docs/internship_agent_extension.md)

@@ -1,0 +1,30 @@
+[project]
+name = "llm-alignment-course"
+version = "0.1.0"
+description = "Independent course project comparing DPO and lightweight RLHF on preference data."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "accelerate>=1.0.0",
+  "datasets>=3.0.0",
+  "matplotlib>=3.8.0",
+  "mergekit>=0.1.0",
+  "numpy>=1.26.0",
+  "pandas>=2.1.0",
+  "peft>=0.13.0",
+  "safetensors>=0.4.0",
+  "torch>=2.2.0",
+  "tqdm>=4.66.0",
+  "transformers>=4.51.0",
+  "trl>=0.24.0,<0.25.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100

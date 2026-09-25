@@ -1,0 +1,13 @@
+{
+  "base_model": "Qwen/Qwen3-0.6B",
+  "dataset_name": "Anthropic/hh-rlhf",
+  "source_rows": 80,
+  "train_size": 40,
+  "val_size": 10,
+  "test_size": 10,
+  "max_seq_length": 512,
+  "max_prompt_length": 256,
+  "max_steps": 2,
+  "seed": 42
+}
+

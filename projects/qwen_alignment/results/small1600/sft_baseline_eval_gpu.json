@@ -1,0 +1,11 @@
+{
+  "model": "artifacts/main/sft_merged",
+  "n_pairs": 200,
+  "device": "cuda",
+  "sft_preference_accuracy": {
+    "accuracy": 0.55,
+    "mean_logprob_margin": 22.01734375,
+    "std_logprob_margin": 129.27258720891496
+  },
+  "runtime_seconds": 13.376055106520653
+}

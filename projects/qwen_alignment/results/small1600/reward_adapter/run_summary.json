@@ -1,0 +1,22 @@
+{
+  "method": "reward_model_lora",
+  "base_model": "/root/autodl-tmp/models/Qwen/Qwen3-0.6B",
+  "train_rows": 1600,
+  "eval_rows": 200,
+  "max_steps": 200,
+  "train_runtime_seconds": 553.4443248808384,
+  "train_result": {
+    "train_runtime": 553.0622,
+    "train_samples_per_second": 2.893,
+    "train_steps_per_second": 0.362,
+    "total_flos": 1436674761990144.0,
+    "train_loss": 0.6620794677734375,
+    "epoch": 1.0
+  },
+  "parameters": {
+    "trainable": 10093568.0,
+    "total": 606144512.0,
+    "trainable_ratio": 0.016652081805864805
+  },
+  "final_dir": "artifacts/main/reward_adapter/final"
+}

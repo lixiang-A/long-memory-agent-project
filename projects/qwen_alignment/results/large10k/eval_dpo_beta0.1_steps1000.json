@@ -1,0 +1,20 @@
+{
+  "device": "cuda",
+  "n_preference_pairs": 1000,
+  "n_generation_prompts": 0,
+  "reference_preference": {
+    "accuracy": 0.591,
+    "mean_logprob_margin": 26.207546875,
+    "std_logprob_margin": 114.31687698242715
+  },
+  "dpo_preference": {
+    "accuracy": 0.598,
+    "mean_logprob_margin": 29.22803125,
+    "std_logprob_margin": 119.43367306381668
+  },
+  "dpo_approx_kl_to_reference": 0.12815386670827866,
+  "rm_win_rate": {
+    "status": "skipped_no_ppo_model"
+  },
+  "runtime_seconds": 222.7234320193529
+}

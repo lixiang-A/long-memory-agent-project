@@ -112,3 +112,14 @@ Later, this can be extended into a stronger agent-memory and RAG portfolio proje
 - Course submission plan: [docs/course_submission_plan.md](docs/course_submission_plan.md)
 - Internship-oriented extension plan: [docs/internship_agent_extension.md](docs/internship_agent_extension.md)
 - New chat handoff: [docs/new_chat_handoff.md](docs/new_chat_handoff.md)
+
+## Qwen alignment project / CV reading entry
+
+An independent Qwen3-0.6B SFT/DPO course project is archived alongside the memory prototype for CV review. These are separate projects.
+
+- [Qwen project overview](projects/qwen_alignment/README.md)
+- [CV brief and evidence boundaries](projects/qwen_alignment/CV_BRIEF.md)
+- [Verified historical results](projects/qwen_alignment/RESULTS.md)
+- [Source code and reproduction notes](projects/qwen_alignment/REPRODUCIBILITY.md)
+
+The archive includes source code and aggregate experiment evidence. The reported 59.1% to 59.8% change is held-out offline preference accuracy, not a generation win rate or a statistically established improvement. PPO remains a pilot without a completed comparative result.

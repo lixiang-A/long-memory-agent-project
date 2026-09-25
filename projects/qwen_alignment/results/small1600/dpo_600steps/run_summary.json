@@ -1,0 +1,23 @@
+{
+  "method": "dpo_lora",
+  "model_name_or_path": "artifacts/main/sft_merged",
+  "train_rows": 1600,
+  "eval_rows": 200,
+  "max_steps": 600,
+  "beta": 0.1,
+  "train_runtime_seconds": 1873.4770039021969,
+  "train_result": {
+    "train_runtime": 1873.1431,
+    "train_samples_per_second": 2.563,
+    "train_steps_per_second": 0.32,
+    "total_flos": 0.0,
+    "train_loss": 0.5611911678314209,
+    "epoch": 3.0
+  },
+  "parameters": {
+    "trainable": 10092544.0,
+    "total": 606142464.0,
+    "trainable_ratio": 0.01665044869715645
+  },
+  "final_dir": "artifacts/main/dpo_600steps/final"
+}

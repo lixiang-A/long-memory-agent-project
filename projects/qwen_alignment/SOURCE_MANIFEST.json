@@ -1,0 +1,192 @@
+{
+  "snapshot_date": "2026-09-25",
+  "source_project": "llm_alignment_course",
+  "note": "Copied source and aggregate evidence; SHA-256 checksums preserve provenance. Cloud metrics are archived historical outputs, not rerun in this sync.",
+  "files": [
+    {
+      "path": "src/alignment_course/__init__.py",
+      "source": "src/alignment_course/__init__.py",
+      "sha256": "38afd62100773aaa932c8691136625bf0967492b605ac6b0a9cd68ea30f386a3"
+    },
+    {
+      "path": "src/alignment_course/data_prep.py",
+      "source": "src/alignment_course/data_prep.py",
+      "sha256": "5f12b1d6dd78b5bb7559d80a4cce1fc6939891977d2067a1f193e1b4778253a7"
+    },
+    {
+      "path": "src/alignment_course/evaluate.py",
+      "source": "src/alignment_course/evaluate.py",
+      "sha256": "24d0a41945484670e7ed5e50520932ca4b29b3a6dba0fcaaa76939e4544db157"
+    },
+    {
+      "path": "src/alignment_course/io_utils.py",
+      "source": "src/alignment_course/io_utils.py",
+      "sha256": "96617e228dd2869ee1ddbd6dd202e856f2fcad0b315b06dd929dec03661df480"
+    },
+    {
+      "path": "src/alignment_course/merge_lora.py",
+      "source": "src/alignment_course/merge_lora.py",
+      "sha256": "2b1b473c591464f275f55fb7d974087ccf2d45aca904c6fb664a04490325928f"
+    },
+    {
+      "path": "src/alignment_course/model_utils.py",
+      "source": "src/alignment_course/model_utils.py",
+      "sha256": "b62ac99416d3df990e7743f69d90dfc1128b62c51b93f30a5818dfdd67770040"
+    },
+    {
+      "path": "src/alignment_course/plot_metrics.py",
+      "source": "src/alignment_course/plot_metrics.py",
+      "sha256": "d5a55db2a0013e50a643b1220429988206332dcab1e45b7da0e75b49ddba6937"
+    },
+    {
+      "path": "src/alignment_course/prepare_hh.py",
+      "source": "src/alignment_course/prepare_hh.py",
+      "sha256": "87216f99a4840f0808653af3936663a900d24f56db64891654585797bced40f5"
+    },
+    {
+      "path": "src/alignment_course/train_dpo.py",
+      "source": "src/alignment_course/train_dpo.py",
+      "sha256": "ef38b91497147c674b291d6f0419806c76895364c97b86c2d218919edb04d4e8"
+    },
+    {
+      "path": "src/alignment_course/train_ppo_pilot.py",
+      "source": "src/alignment_course/train_ppo_pilot.py",
+      "sha256": "70f72b25710572526b56f05f061d1e11b9439f39c852e34ba519130f20ed8327"
+    },
+    {
+      "path": "src/alignment_course/train_reward_model.py",
+      "source": "src/alignment_course/train_reward_model.py",
+      "sha256": "19f6a33c3f453fdf205325f59100af4102046972349995fe70c6c4207f2dbed1"
+    },
+    {
+      "path": "src/alignment_course/train_sft.py",
+      "source": "src/alignment_course/train_sft.py",
+      "sha256": "91b024d6ea5ba389d27a1de04db53deb0af06620b9f21ef75113cd4522b79c30"
+    },
+    {
+      "path": "src/alignment_course/training_utils.py",
+      "source": "src/alignment_course/training_utils.py",
+      "sha256": "7f5d5eb1dc0fd9dc0ae43dca9a283d3265ad7cbf2f75a976f214781bc73f3c16"
+    },
+    {
+      "path": "scripts/net_env.sh",
+      "source": "scripts/net_env.sh",
+      "sha256": "4bdbbab41884bf78cbecb46ba326cefcadfed84f550e5ef36dfdb875279c0fab"
+    },
+    {
+      "path": "scripts/run_dpo_extended.sh",
+      "source": "scripts/run_dpo_extended.sh",
+      "sha256": "96ded5ee2d9434e091294e84e88b78942551d4d4056f6039179671e1599cd066"
+    },
+    {
+      "path": "scripts/run_large10k_autodl.sh",
+      "source": "scripts/run_large10k_autodl.sh",
+      "sha256": "a724880000b9df8d42f2ea4bb568afa397fa9a2dd81ff8545fb034c722ae12cf"
+    },
+    {
+      "path": "scripts/run_main_experiment.sh",
+      "source": "scripts/run_main_experiment.sh",
+      "sha256": "cb09c0740faf2e5045eaa0811cff1ffaf56b7e9b234c179223a4c58df8eb4ff6"
+    },
+    {
+      "path": "scripts/run_smoke.sh",
+      "source": "scripts/run_smoke.sh",
+      "sha256": "be7e7f9a3a327ad4571681cdb3af4a28d323927f2997473a2897143a49eb9f48"
+    },
+    {
+      "path": "scripts/setup_env.sh",
+      "source": "scripts/setup_env.sh",
+      "sha256": "8c92a4d2e3652c99863aaf1a7010f6e628c1f2784ef713eb56e746e6f8c69262"
+    },
+    {
+      "path": "scripts/sft_baseline.py",
+      "source": "scripts/sft_baseline.py",
+      "sha256": "97305ba5a7ef1a8c6d78dc87f441cd12009a42e7ff4f3924199882f2376115c6"
+    },
+    {
+      "path": "configs/smoke.json",
+      "source": "configs/smoke.json",
+      "sha256": "c1b7eb4ba27623f037107801ac5b3c038464625225c98d1a9b2d7aa1a213bd84"
+    },
+    {
+      "path": "pyproject.toml",
+      "source": "pyproject.toml",
+      "sha256": "0ccd97a3c0ff7d32c5cc15cd6f4bdda45901f47712e263138d7fadbbfc312507"
+    },
+    {
+      "path": ".python-version",
+      "source": ".python-version",
+      "sha256": "49a506dd32096b010d75205acf3430c9ae6c40351888129499e5a5e487126c93"
+    },
+    {
+      "path": "results/small1600/sft_baseline_eval_gpu.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/sft_baseline_eval_gpu.json",
+      "sha256": "126585b52ab84a4591b46f40a41ee99e145b935f7d9d6bdda039fe3d9af7a7a8"
+    },
+    {
+      "path": "results/small1600/eval_dpo_200_fixed_v2.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/eval_dpo_200_fixed_v2.json",
+      "sha256": "07e82dab2d72d35bce92628b3e66a6153ba8f5556be58289d934e51fb70908cc"
+    },
+    {
+      "path": "results/small1600/eval_dpo_600_fixed_v2.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/eval_dpo_600_fixed_v2.json",
+      "sha256": "43bdd666a33679056848c443981757162e7381322dd64bb22b9852c46dff81d6"
+    },
+    {
+      "path": "results/small1600/eval_dpo_beta05_fixed_v2.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/eval_dpo_beta05_fixed_v2.json",
+      "sha256": "cf6372b07ab0490999e95f86706c8f1fc8ba0c03a726c7c5b432bd1f60a09f08"
+    },
+    {
+      "path": "results/small1600/sft_adapter/run_summary.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/sft_adapter/run_summary.json",
+      "sha256": "4ff51cfb42c4198ce98e245318b22a5049438e26c91cbf824b2880d93277d6f2"
+    },
+    {
+      "path": "results/small1600/dpo_adapter/run_summary.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/dpo_adapter/run_summary.json",
+      "sha256": "4365a4b8db110daed306d088989030e02e362785f2a96a64db2e391810c7269a"
+    },
+    {
+      "path": "results/small1600/dpo_600steps/run_summary.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/dpo_600steps/run_summary.json",
+      "sha256": "041fb23d960205dd013c239f623a9e6e24e67f7bd73688116f448546dc17aca4"
+    },
+    {
+      "path": "results/small1600/dpo_beta0.5/run_summary.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/dpo_beta0.5/run_summary.json",
+      "sha256": "f07b4bd94e74f3d3480fba1888eb5a3efa5ef26aa23d61a33c2bb43744ebc7a0"
+    },
+    {
+      "path": "results/small1600/reward_adapter/run_summary.json",
+      "source": "artifacts/llm_small1600_results.tar.gz::artifacts/main/reward_adapter/run_summary.json",
+      "sha256": "185e7143841c5f15ff8d9b565956a8c771a45ac05877acef5e706e872ab20c34"
+    },
+    {
+      "path": "results/large10k/eval_dpo_beta0.1_steps1000.json",
+      "source": "artifacts/llm_large10k_results.tar.gz::root/autodl-tmp/llm_large10k/artifacts/large10k/eval_dpo_beta0.1_steps1000.json",
+      "sha256": "56f1775c88c06543528294716ec7b81ea934fd13475d2ea1966ad933d9627bb0"
+    },
+    {
+      "path": "results/large10k/sft_adapter/run_summary.json",
+      "source": "artifacts/llm_large10k_results.tar.gz::root/autodl-tmp/llm_large10k/artifacts/large10k/sft_adapter/run_summary.json",
+      "sha256": "2648eaa724ff6b801157df937b76f389addb551616fc161957863ee080479e64"
+    },
+    {
+      "path": "results/large10k/dpo_beta0.1_steps1000/run_summary.json",
+      "source": "artifacts/llm_large10k_results.tar.gz::root/autodl-tmp/llm_large10k/artifacts/large10k/dpo_beta0.1_steps1000/run_summary.json",
+      "sha256": "08d616f50432454b91909d7e943cf15c60be396c12ef479cbff5c28c13b65031"
+    },
+    {
+      "path": "results/data/processed_summary.json",
+      "source": "data/processed/summary.json",
+      "sha256": "65d72ae8ccbcf1c67677dae92435fa072cdfdaf132ac8d9c1fbf7e68b6491bf4"
+    },
+    {
+      "path": "results/data/processed_smoke_summary.json",
+      "source": "data/processed_smoke/summary.json",
+      "sha256": "d75b955a37e8a7d32e6cc05f83b8c7866a7a4fc34b9a8b2d2bda2fae51d2c3f7"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dataset_name": "Anthropic/hh-rlhf",
+  "split": "train",
+  "source_rows_requested": 2000,
+  "source_rows_loaded": 2000,
+  "usable_rows": 2000,
+  "parse_failures": 0,
+  "train_size": 1600,
+  "val_size": 200,
+  "test_size": 200,
+  "fields": [
+    "source_idx",
+    "prompt",
+    "chosen",
+    "rejected"
+  ]
+}

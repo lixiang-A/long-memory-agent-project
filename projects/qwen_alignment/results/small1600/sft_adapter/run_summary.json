@@ -1,0 +1,22 @@
+{
+  "method": "sft_lora",
+  "base_model": "/root/autodl-tmp/models/Qwen/Qwen3-0.6B",
+  "train_rows": 1600,
+  "eval_rows": 200,
+  "max_steps": 120,
+  "train_runtime_seconds": 341.33085721731186,
+  "train_result": {
+    "train_runtime": 340.9623,
+    "train_samples_per_second": 2.816,
+    "train_steps_per_second": 0.352,
+    "total_flos": 378021642240000.0,
+    "train_loss": 2.32524475256602,
+    "epoch": 0.6
+  },
+  "parameters": {
+    "trainable": 10092544.0,
+    "total": 606142464.0,
+    "trainable_ratio": 0.01665044869715645
+  },
+  "final_dir": "artifacts/main/sft_adapter/final"
+}

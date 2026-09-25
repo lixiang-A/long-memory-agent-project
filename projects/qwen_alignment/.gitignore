@@ -1,0 +1,9 @@
+.venv/
+.uv_cache/
+.uv_python/
+.hf_home/
+__pycache__/
+*.egg-info/
+artifacts/
+data/
+.DS_Store
